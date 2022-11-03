@@ -1,0 +1,81 @@
+1 november 2022
+
+/pbw
+    1. index.php        --> 100 baris code
+    2. dbconnect.php    --> 15 baris code
+initial project / proyek awal
+
+2 november 2022
+/pbw
+    1. index.php        --> 150 baris code
+    2. dbconnect.php    --> 15 baris code
+perubahan pertama --> index.php dari 100 baris ke 150 baris.
+
+3 november 2022
+/pbw
+    1. index.php        --> 150 baris code
+    2. DBDriver.php     --> 55 baris code
+hapus file dbconnect.php
+buat file baru DBDriver.php
+
+Version Control System / manajemen perubahan file.
+
+4 november 2022
+Misal kalau tidak pakai VCS
+Bagaimana saya membatalkan file DBDriver.php dan kembali ke dbconnect.php
+ternyata DBDriver.php menyebabkan banyak masalah.
+
+Supaya history coding kita menggunakan VCS --> software GIT
+
+1 november 2022 --> staging     id tanggal 1 november 2022
+2 november 2022 --> staging     id tanggal 2 november 2022
+3 november 2022 --> staging     id tanggal 3 november 2022
+
+repository pbw itu ada 3 history source code.
+ditanggal 4 mau kembali ke repository tanggal 1 bisa ga?
+
+mundur ke stage tanggal 1.
+
+
+tanggal 5 november ada fitur baru. fitur pendaftaran, fitur ujian online
+
+/pbw
+    1. index.php
+    2. DBDriver.php
+    /pendaftaran        fahri
+        index.php
+    /ujian              tengku
+        index.php
+
+main /pbw               adi
+        1. index.php
+        2. DBDriver.php
+
+branch  pendaftaran     fahri
+    /pbw
+        1. index.php
+        2. DBDriver.php
+        /pendaftaran
+            index.php
+
+branch ujian            tengku
+    /pbw  
+        1. index.php
+        2. DBDriver.php
+        /ujian
+            index.php
+
+merge main pendaftaran
+merge main ujian
+merge main
+
+/pbw
+    1. index.php
+    2. DBDriver.php
+    /pendaftaran
+        index.php
+    /ujian
+        index.php
+
+ketika sudah merge
+main ada di adi di fahri ada juga di tengku 
